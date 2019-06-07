@@ -179,6 +179,15 @@ p {
   color: #23293B;
   padding: 0 12px;
 }
+.navigation nav a:hover {
+  color: #f4f4f4;
+  background-color: #23293B;
+}
+@media (max-width: 500px) {
+  .navigation {
+    width: 100%;
+  }
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -248,17 +257,8 @@ footer {
   text-decoration: none;
 }
 .home .walk .walk-text .btn a:hover {
-  font-size: 2rem;
   color: #22283A;
   background-color: #F1F1F1;
-  width: 30%;
-  border-radius: 10px;
-  text-align: center;
-  padding: 8px 0;
-}
-.home .walk .walk-text .btn a:hover a {
-  color: #22283A;
-  text-decoration: none;
 }
 .home .walk .walk-img {
   width: 46%;
@@ -268,4 +268,37 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .sky,
+  .home .launch {
+    display: none;
+  }
+  .home .space-images img {
+    width: 95%;
+    margin: 10px auto 10px auto;
+    padding-bottom: 20px;
+  }
+  .home .header-img {
+    width: 100%;
+  }
+  .home .walk {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 10px 0;
+    margin-top: 20px;
+  }
+  .home .walk .walk-text {
+    width: 100%;
+    padding: 15px;
+  }
+  .home .walk .walk-text .btn {
+    width: 100%;
+    padding: 20px 0;
+  }
+  .home .walk .walk-img {
+    width: 95%;
+    margin: 10px auto 10px auto;
+    padding-bottom: 20px;
+  }
 }

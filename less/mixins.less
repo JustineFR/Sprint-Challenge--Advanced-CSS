@@ -1,5 +1,13 @@
 // Mixins Here
 
+
+.image-500() {
+    width: 95%;
+    margin: 10px auto 10px auto;
+    padding-bottom: 20px;
+  }
+
+
 .btn-style(@color, @background-color){
     font-size: 2rem;
     color: @color;
@@ -17,20 +25,7 @@
   }
 
 
-
-//   .btn-style(@color, @background-color) {
-//     font-size: 2rem;
-//     color: @sea-shell;
-//     background-color: @btn-bg-color;
-//     width: 30%;
-//     border-radius: 10px;
-//     text-align: center;
-//     padding: 8px 0;
-
-//     a {
-//       color: @sea-shell;
-//       text-decoration: none;
-//     }
-
-
-//   }
+  .a-hover (@color, @background-color) {
+    color: @color;
+    background-color: @background-color;
+  }

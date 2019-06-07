@@ -66,7 +66,7 @@
         .btn-style(@sea-shell, @btn-bg-color);
 
         a:hover{
-          .btn-style(@btn-bg-color, @sea-shell);
+          .a-hover(@btn-bg-color, @sea-shell);
         }
       }
     }
@@ -83,3 +83,48 @@
     }
   }
 }// home
+
+
+
+@media @phone {
+
+  .home {
+
+    .sky, .launch {
+      display: none;
+    }
+
+      .space-images img {
+        .image-500()
+      }
+
+
+    .header-img {
+      width: 100%;
+    }
+
+    .walk {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 10px 0;
+      margin-top: 20px;
+
+      .walk-text {
+        width: 100%;
+        padding: 15px;
+
+        .btn {
+          width: 100%;
+          padding: 20px 0;
+        }
+      }
+
+      .walk-img {
+        .image-500()
+      }
+
+      
+
+    }
+  }
+}
