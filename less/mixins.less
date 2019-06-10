@@ -1,1 +1,32 @@
 // Mixins Here
+
+
+.image-500() {
+    width: 95%;
+    margin: 10px auto 10px auto;
+    padding-bottom: 20px;
+  }
+
+
+.btn-style(@color, @background-color){
+    font-size: 2rem;
+    color: @color;
+    background-color: @background-color;
+    width: 30%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    padding: 8px 0;
+    
+
+    a {
+      color: @color ;
+      text-decoration: none;
+    }
+  }
+
+
+  .a-hover (@color, @background-color) {
+    color: @color;
+    background-color: @background-color;
+  }

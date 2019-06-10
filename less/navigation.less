@@ -1,1 +1,35 @@
 // Navigation code here
+
+.navigation {
+    text-align: center;
+    width: 80%;
+    margin: 20px auto 0 auto;
+    padding: 10px 0;
+    background: @header-footer;
+
+    h1 {
+        font-size: 4.2rem;
+    }
+
+    nav {
+        padding-top: 20px;
+        a {
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: @header-font-color;
+            padding: 0 12px;
+        }
+
+        a:hover{
+            .a-hover(@header-footer, @header-font-color);
+          }
+    }
+}
+
+ @media @phone {
+     .navigation {
+        width: 100%;
+     }
+    
+ }
+
